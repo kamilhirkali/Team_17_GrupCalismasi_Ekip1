@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class OkulRunner {
     public static void main(String[] args) {
         Okul okul1=new Okul("Mevlana Lisesi",3);
+
         int ogrenciSayisi=1;
         Scanner input=new Scanner(System.in);
 do {
@@ -30,6 +31,7 @@ do {
         System.out.println("Yeni Ogrenci ismi giriniz");
     }
 }while(ogrenciSayisi<= okul1.getMaxOgrenciSayisi());
+       // System.out.println(okul1.getOgrenciler());
 
 for(Ogrenci w: okul1.getOgrenciler()){
     System.out.println(w);

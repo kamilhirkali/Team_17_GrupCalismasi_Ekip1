@@ -50,12 +50,12 @@ public class Runner {
                     //oyunuBaslat();
                 } else {
                     cikis=true;
-                    Exit gameOver=new Exit(oyuncu1Puan,oyuncu2Puan,oyuncu1Adi,oyuncu2Adi);
+                    new Exit(oyuncu1Puan,oyuncu2Puan,oyuncu1Adi,oyuncu2Adi);
                     break;
                 }
             } else {
                 cikis=false;
-                Exit gameOver=new Exit(gamer,oyuncu1Adi,oyuncu2Adi);
+                new Exit(gamer,oyuncu1Adi,oyuncu2Adi);
                 break;
             }
         }
