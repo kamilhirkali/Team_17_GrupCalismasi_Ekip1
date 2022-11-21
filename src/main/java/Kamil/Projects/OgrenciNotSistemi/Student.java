@@ -88,17 +88,17 @@ private boolean isPass;
 
 
 
-   public double calcAvarage(int prefix, int note, int sozluYuzdesi) {
+   public double calcAvarage(int prefix, int note, int sozluYuzdesi,String dersAdi) {
       int yaziliYuzdesi=100-sozluYuzdesi;
       avarage=(prefix*sozluYuzdesi/100)+(note*yaziliYuzdesi/100);
-      System.out.println("Dersin ortalamasi ="+avarage);
+      System.out.println(dersAdi+" dersinin ortalamasi ="+avarage);
 
       return avarage;
    }
 
    public void printNote(double ort) {
 
-      System.out.print("Derslerin genel ortalamasi ="+ort);
+      System.out.println("Derslerin genel ortalamasi ="+ort);
 
       if (isPass){
          System.out.println("Ogrenci sinifi gecti");

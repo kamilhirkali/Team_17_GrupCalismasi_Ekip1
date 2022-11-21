@@ -70,7 +70,7 @@ public class Course extends Runner {
 
    public void printTeacher(){
        for(Teacher w:ogretmenler){
-           System.out.println(w);
+           System.out.print(w+" ");
        }
    }
 }

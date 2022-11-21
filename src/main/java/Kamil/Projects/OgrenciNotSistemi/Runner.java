@@ -25,6 +25,8 @@ public static void baslat(){
     String dersAdi;
     String cikis;
     Scanner input=new Scanner(System.in);
+    System.out.println("                   Ogrenci Not Sistemi Programi              \n");
+    System.out.print("Ders Ogretmenleri : ");
 
     Teacher teacher1=new Teacher("Hasan Yilmaz","2345","FIZIK");
     Teacher teacher2=new Teacher("Mehmet Demir","4350","KIMYA");
@@ -46,6 +48,9 @@ public static void baslat(){
     course3.printTeacher();
 
     Student student1=new Student("ahmet","5623","11A","FIZIK","KIMYA","MATEMATIK",0,false);
+    System.out.println();
+    System.out.println();
+
 
     System.out.println("Not girisi yapilacak Ogrenci Adini giriniz");
     String ogrName= input.next();
@@ -63,7 +68,7 @@ public static void baslat(){
             System.out.println(dersAdi + " dersinin sozlu notuna etkisi yuzde kac olsun ?");
             int sozluYuzdesi = input.nextInt();
 
-            toplam += student1.calcAvarage(prefix, note, sozluYuzdesi);
+            toplam += student1.calcAvarage(prefix, note, sozluYuzdesi,dersAdi);
 
             if(dersAdi.equalsIgnoreCase(student1.getCourse1())){
 
@@ -86,6 +91,7 @@ public static void baslat(){
         }while(true);
 
         double genelOrtalama=toplam/3;
+        
 
         if (genelOrtalama >= 50) {
             student1.setPass(true);

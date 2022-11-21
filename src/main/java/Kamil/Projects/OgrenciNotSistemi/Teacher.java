@@ -45,11 +45,10 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "Ogretmenler{" +
-                "isim='" + name + '\'' +
-                ", sicilnumarasi='" + mpno + '\'' +
-                ", bolum='" + branch + '\'' +
-                '}';
+        return "[" +
+                 name +  " ==> "+
+                 branch  +
+                "]";
     }
 }
 
